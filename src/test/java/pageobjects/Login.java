@@ -1,4 +1,4 @@
-package pageobjects_myco;
+package pageobjects;
 
 import com.mobile.utilities.Util;
 
