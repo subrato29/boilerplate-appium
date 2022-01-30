@@ -6,7 +6,7 @@ Getting started:
 
 Repository url:
 ----------------------------------------
-- https://github.com/subrato29/appium-framework.git
+- https://github.com/subrato29/boilerplate-appium
 
 Framework Nature and Feature:
 -----------------------------------------------------------------------------------------------------------------------------------------------------
