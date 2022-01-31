@@ -1,37 +1,25 @@
 Getting started:
-------------------------------
-- boilerplate-appium
-- Author: Subrato Sarkar
-- App: Android
+-------------------------------------------------
+	- boilerplate-appium
+	- Author: Subrato Sarkar
+	- AUT Android
 
 Repository url:
-----------------------------------------
-- https://github.com/subrato29/boilerplate-appium
+-------------------------------------------------
+	- https://github.com/subrato29/boilerplate-appium
 
 Framework Nature and Feature:
------------------------------------------------------------------------------------------------------------------------------------------------------
-- Maven
-- Page Object Model
-- TestNG
-- Locators map
-- Hybrid
-- Runs on Emulator and Mobile center
-- Handle web component as well
+-------------------------------------------------
+	- Maven
+	- Page Object Model
+	- TestNG
+	- Locators map
+	- Hybrid
+	- Runs on Emulator and Mobile center
+	- Handle web component as well
 
-Configuration files:
------------------------------------------------------------------------------------------------------------------------------------------------------
-- globalvalue.properties
-- ===============================================================	
-	- DevicePlatform => Value is either 'MC' or 'emulator'.
-		- MC => Execution will happen in Mobile center
-		- emulator => Execution will happen in Emulator
-
-	- MC_Password => Put your MC password in encrypted form (To encrypt your MC password: 'encryptionmanager' package)
-	
-	- ExecutionPlatform => Value is either 'local' or 'jenkins'
-
--config.properties
-===============================================================
+config.properties
+-------------------------------------------------
 	- android parameters
 		- DeviceID =
 		- DeviceName =
@@ -49,36 +37,7 @@ Configuration files:
 		- ScreenshotPass =
 
 How to run your TC:
------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------
 	- All your test script should be 'testscripts' package.
 	- You can directly run <testcase>.java file
 	- You can 'TestNgRunner.java' file available in 'com.runner.testng' package, which creates/update testng.xml file and run the test script automatically.
-
-
-Framework:
------------------------------------------------------------------------------------------------------------------------------------------------------
-Page objects:
-===============================================================
-	- 'pageobjects' package
-
-ActionEngine:
-===============================================================
-	- Appium actions will be mapped here
-	
-ActionWeb:
-===============================================================
-	- Selenium actions will be mapped here
-
-com.app.keywords:
-===============================================================
-	- All app specific navigations(keywords) will be mapped here 
-
-Current OS support:
------------------------------------------------------------------------------------------------------------------------------------------------------
-	-Android
-
-Packages:
-==================================================================
-	-com.mobile => Having mobile component
-	-com.web => Having web component
-
