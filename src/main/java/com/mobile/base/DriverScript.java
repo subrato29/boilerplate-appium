@@ -294,6 +294,7 @@ public class DriverScript {
                 try {
                     testEnv = Util.getProperty("test_environment").toUpperCase();
                 } catch (IOException e) {}
+                getUrl();
                 isTestCaseRunnable = true;
                 xls = new Xls_Reader(TEST_DATA_PATH + File.separator + getTestDataSheetName() + ".xlsx");
                 initializeTest();
@@ -303,6 +304,14 @@ public class DriverScript {
             isTestCaseRunnable = false;
         }
         return isTestCaseRunnable;
+    }
+
+    public static void getUrl() {
+        if (testEnv.toUpperCase().equals("PROD01")) {
+            baseUrl = "https://www.website.com";
+        } else if (testEnv.toUpperCase().equals("PROD02")) {
+            baseUrl = "https://www.website.com";
+        }
     }
 
     public static void initializeTest() {
