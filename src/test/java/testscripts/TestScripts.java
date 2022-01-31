@@ -9,7 +9,7 @@ import com.app.keywords.*;
 
 public class TestScripts extends DriverScript {
     @Test
-    public void flow_AFB_Create_User_FS_AT043() throws InterruptedException, IOException {
+    public void loginTest() throws InterruptedException, IOException {
         String testCaseID = "TC001";
         if (isTestCaseRunnable(testCaseID)) {
             Keywords.login();
